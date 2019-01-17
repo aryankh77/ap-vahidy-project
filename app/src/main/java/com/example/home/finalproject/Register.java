@@ -198,14 +198,14 @@ public class Register extends AppCompatActivity {
                 String pa=password.getText().toString();
                 String em=email.getText().toString();
                 String na=name.getText().toString();
-                Database database=Database.getDatabase();
+                /*Database database=Database.getDatabase();
                 try {
                     database.register(un,pa,em,na);
                         database.saveData();
 
                 } catch (ExistingUserException e1) {
                     e1.printStackTrace();
-                }
+                }*/
                 Intent intent =new Intent(Register.this,Home.class);
                 startActivity(intent);
                 finish();

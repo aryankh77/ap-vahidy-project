@@ -3,17 +3,16 @@ package com.example.home.finalproject;
 import android.widget.TextView;
 
 import java.io.*;
+import java.util.ArrayList;
 
 class Database implements Serializable {
-    private User u;
-    private User[] us;
-    private int count = 0;
+    private ArrayList<Taskinfo> taskinfo;
+    private ArrayList<User> users;
     private FileOutputStream fileOutputStream;
     private ObjectOutputStream objectOutputStream;
     private static Database database;
 
-
-    private Database() {
+    /*private Database() {
         us = new User[100];
     }
 
@@ -96,5 +95,5 @@ class UnknownUserException extends Exception {
 class WrongPasswordException extends Exception{
     public WrongPasswordException(){
         System.out.println("wrong password");
-    }
+    }*/
 }

@@ -71,7 +71,7 @@
         app:layout_constraintVertical_bias="0.06" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/ettaskname"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -237,5 +237,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.73" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/sendicon"
+        tools:layout_editor_absoluteX="328dp"
+        tools:layout_editor_absoluteY="194dp" />
 
 </android.support.constraint.ConstraintLayout>

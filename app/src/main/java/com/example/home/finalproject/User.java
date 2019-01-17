@@ -1,11 +1,12 @@
 package com.example.home.finalproject;
-
+import java.util.ArrayList;
 public class User {
     private String username;
     private String password;
     private String email;
     private String name;
     private boolean state;
+    private ArrayList<Taskinfo> array;
 
 
     public User(String username, String password, String email, String name) {
@@ -13,6 +14,8 @@ public class User {
         this.password= password;
         this.email = email;
         this.name = name;
+        array= new ArrayList<Taskinfo>();
+
     }
 
     public String getUsername() {
